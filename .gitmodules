@@ -1,3 +1,18 @@
 [submodule ".config/nvim/bundle/vim-pathogen"]
 	path = .config/nvim/bundle/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
+[submodule ".config/nvim/bundle/ctrlp.vim"]
+	path = .config/nvim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule ".config/nvim/bundle/vim-airline"]
+	path = .config/nvim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline
+[submodule ".config/nvim/bundle/nerdtree"]
+	path = .config/nvim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".config/nvim/bundle/auto-ctags.vim"]
+	path = .config/nvim/bundle/auto-ctags.vim
+	url = git@github.com:soramugi/auto-ctags.vim.git
+[submodule ".config/nvim/bundle/deoplete.nvim"]
+	path = .config/nvim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
