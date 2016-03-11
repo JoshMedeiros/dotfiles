@@ -16,3 +16,9 @@
 [submodule ".config/nvim/bundle/deoplete.nvim"]
 	path = .config/nvim/bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule ".config/nvim/bundle/vim-colors-solarized"]
+	path = .config/nvim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".config/nvim/bundle/vim-marching"]
+	path = .config/nvim/bundle/vim-marching
+	url = git@github.com:osyo-manga/vim-marching.git

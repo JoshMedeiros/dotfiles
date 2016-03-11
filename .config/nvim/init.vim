@@ -2,8 +2,9 @@ execute pathogen#infect()
 let mapleader=","
 
 " UI
-colorscheme molokai                         " A nice theme
+colorscheme solarized                       " A nice theme
 syntax enable                               " Enable syntax highlighting
+set background=dark                         " Set background to dark
 set number                                  " Line numbers
 set showcmd                                 " Command at bottom
 set cursorline                              " Highlight current line
@@ -64,5 +65,31 @@ let g:ctrlp_switch_buffer=0                 " Don't jump to a different window i
 let g:ctrlp_working_path_mode='r'           " List files in under source control
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden --ignore .git/ -g ""'
 
+" Buffers
+nnoremap <leader>j :bprevious<CR>|          " Switch to previous buffer
+nnoremap <leader><Left> :bprevious<CR>|     " Switch to previous buffer
+nnoremap <leader>k :bnext<CR>|              " Switch to next buffer
+nnoremap <leader><Right> :bnext<CR>|        " Switch to next buffer
+
+" NERDTree
+let NERDTreeQuitOnOpen=1                    " Quit NERDTree when opening a file
+nmap <silent> <c-n> :NERDTreeToggle<CR>     " Toggle NERDTree
+
 " Completion
-let g:deoplete#enable_at_startup=1
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"| " Enable tab completion
+
+" Auto CTags
+set tags=tags,.git/tags                     " Enable .git/tags as an alternative tags file
+let g:auto_ctags=1                          " Enable generating ctags on write
+let g:auto_ctags_directory_list=['.git']    " Use .git for saving ctags
+let g:auto_ctags_tags_name='tags'           " Save file as tags
+let g:auto_ctags_tags_args='--tag-relative -R --sort=yes'
+
+" Deoplete
+let g:deoplete#enable_at_startup=1          " Enable deoplete at startup
+
+" Marching
+let g:marching_enable_neocomplete=1         " Enable deoplete support
+let g:marching#clang_command#options = {
+\   "cpp":  "-std=c++14"
+\}
