@@ -93,3 +93,12 @@ let g:clang_snippets=1                      " Enable snippets (placeholders)
 set conceallevel=2                          " Enable concealing of snippet placeholders
 set concealcursor=inv                       " Enable concealing for i,n, and v modes
 set completeopt=menu,longest                " Hide preview window
+
+" Building
+nnoremap <F7> :w<CR>:CMakeBuild<CR>
+" Hack for running asynchronously
+nnoremap <F5> :w<CR>:call jobstart(['cmake', '--build', 'build', '--target', 'run'])<CR>
+
+" Syntastic
+let g:syntastic_cpp_compiler='clang++'      " Set C++ compiler to clang
+let g:syntastic_cpp_compiler_options='-std=c++14' " Use C++14
