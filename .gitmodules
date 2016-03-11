@@ -19,6 +19,6 @@
 [submodule ".config/nvim/bundle/vim-colors-solarized"]
 	path = .config/nvim/bundle/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule ".config/nvim/bundle/vim-marching"]
-	path = .config/nvim/bundle/vim-marching
-	url = git@github.com:osyo-manga/vim-marching.git
+[submodule ".config/nvim/bundle/clang-complete"]
+	path = .config/nvim/bundle/clang-complete
+	url = git@github.com:vim-scripts/clang-complete.git
