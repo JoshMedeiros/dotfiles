@@ -62,7 +62,7 @@ let g:airline#extensions#tabline#enabled=1  " Enable tabline (with mouse support
 " CtrlP
 let g:ctrlp_match_window='bottom,order:ttb' " Show the match window at the bottom, from top to bottom
 let g:ctrlp_working_path_mode='r'           " List files in under source control
-let g:ctrlp_user_command='ag %s -l --nocolor --hidden --ignore .git/ -g ""'
+let g:ctrlp_user_command='ag %s -l --nocolor --hidden --ignore .git/ -g ""' " Set search command
 
 " Buffers
 set hidden                                  " Allow buffers to be hidden with unsaved changes
@@ -83,14 +83,13 @@ set tags=tags,.git/tags                     " Enable .git/tags as an alternative
 let g:auto_ctags=1                          " Enable generating ctags on write
 let g:auto_ctags_directory_list=['.git']    " Use .git for saving ctags
 let g:auto_ctags_tags_name='tags'           " Save file as tags
-let g:auto_ctags_tags_args='--tag-relative -R --sort=yes'
+let g:auto_ctags_tags_args='--tag-relative -R --sort=yes' " Set ctags arguments
 
 " Deoplete
 let g:deoplete#enable_at_startup=1          " Enable deoplete at startup
-let g:clang_use_library=1
-let g:clang_user_options='-std=c++14'
-let g:clang_trailing_placeholder=1
-let g:clang_snippets=1
-set conceallevel=2
-set concealcursor=inv
-set completeopt=menu,longest
+let g:clang_use_library=1                   " Use libclang instead of the binary, much faster
+let g:clang_user_options='-std=c++14'       " Default clang options
+let g:clang_snippets=1                      " Enable snippets (placeholders)
+set conceallevel=2                          " Enable concealing of snippet placeholders
+set concealcursor=inv                       " Enable concealing for i,n, and v modes
+set completeopt=menu,longest                " Hide preview window
