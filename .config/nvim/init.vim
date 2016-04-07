@@ -42,6 +42,11 @@ nnoremap j gj|                              " Move down on wrapped lines
 nnoremap <Down> gj|                         " Move down on wrapped lines
 nnoremap k gk|                              " Move up on wrapped lines
 nnoremap <Up> gk|                           " Move up on wrapped lines
+nmap <silent> <C-k> :wincmd k<CR>           " Focus window on the top
+nmap <silent> <C-j> :wincmd j<CR>           " Focus window on the bottom
+nmap <silent> <C-h> :wincmd h<CR>           " Focus window on the left
+nmap <silent> <C-l> :wincmd l<CR>           " Focus window on the right
+
 
 " Visual
 nnoremap gV `[v`]                           " Highlight all
@@ -66,9 +71,9 @@ let g:ctrlp_user_command='ag %s -l --nocolor --hidden --ignore .git/ -g ""' " Se
 
 " Buffers
 set hidden                                  " Allow buffers to be hidden with unsaved changes
-nnoremap <leader>j :bprevious<CR>|          " Switch to previous buffer
+nnoremap <leader>h :bprevious<CR>|          " Switch to previous buffer
 nnoremap <leader><Left> :bprevious<CR>|     " Switch to previous buffer
-nnoremap <leader>k :bnext<CR>|              " Switch to next buffer
+nnoremap <leader>l :bnext<CR>|              " Switch to next buffer
 nnoremap <leader><Right> :bnext<CR>|        " Switch to next buffer
 
 " NERDTree
