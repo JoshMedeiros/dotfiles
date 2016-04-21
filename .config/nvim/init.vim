@@ -107,3 +107,6 @@ nnoremap <F5> :w<CR>:call jobstart(['cmake', '--build', 'build', '--target', 'ru
 " Syntastic
 let g:syntastic_cpp_compiler='clang++'      " Set C++ compiler to clang
 let g:syntastic_cpp_compiler_options='-std=c++14' " Use C++14
+
+" GPG
+let g:GPGDefaultRecipients=['Josh Medeiros']

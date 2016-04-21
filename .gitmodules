@@ -31,3 +31,6 @@
 [submodule ".config/nvim/bundle/vim-multiple-cursors"]
 	path = .config/nvim/bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule ".config/nvim/bundle/vim-gnupg"]
+	path = .config/nvim/bundle/vim-gnupg
+	url = git@github.com:jamessan/vim-gnupg.git
