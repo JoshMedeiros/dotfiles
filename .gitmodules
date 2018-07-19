@@ -34,3 +34,6 @@
 [submodule ".config/nvim/bundle/vim-gnupg"]
 	path = .config/nvim/bundle/vim-gnupg
 	url = git@github.com:jamessan/vim-gnupg.git
+[submodule ".config/nvim/bundle/suda.vim"]
+	path = .config/nvim/bundle/suda.vim
+	url = git@github.com:lambdalisue/suda.vim

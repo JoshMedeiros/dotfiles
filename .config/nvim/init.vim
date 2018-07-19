@@ -56,7 +56,7 @@ inoremap jk <esc>|                          " Remap jk to exit insert mode
 nnoremap <leader>ev :vsp $MYVIMRC<CR>|      " Edit .vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>|   " Source .vimrc
 nnoremap <leader>ez :vsp ~/.zshrc<CR>|      " Edit .zshrc
-cmap w!! w !sudo tee > /dev/null %|         " Type :w!! to save with sudo
+cmap w!! w suda://%|         " Type :w!! to save with sudo
 
 " Plugins
 
