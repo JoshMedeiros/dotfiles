@@ -50,6 +50,7 @@ nmap <silent> <C-l> :wincmd l<CR>           " Focus window on the right
 
 " Visual
 nnoremap gV `[v`]                           " Highlight all
+set clipboard=unnamedplus                   " Yank will copy to clipboard
 
 " Shortcuts
 inoremap jk <esc>|                          " Remap jk to exit insert mode
