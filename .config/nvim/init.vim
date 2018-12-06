@@ -2,7 +2,7 @@ execute pathogen#infect()
 let mapleader=","
 
 " UI
-colorscheme solarized                       " A nice theme
+colorscheme dracula                         " A nice theme
 syntax enable                               " Enable syntax highlighting
 set background=dark                         " Set background to dark
 set number                                  " Line numbers
@@ -14,7 +14,7 @@ set t_Co=256                                " 256 colors
 set display+=lastline                       " Avoid replacing last lines that don't fit with @'s
 set mouse=a                                 " Enable mouse mode
 set colorcolumn=80,120                      " Highlight columns 80 and 120
-highlight ColorColumn ctermbg=0|            " Set the highlight column color
+"highlight ColorColumn ctermbg=0|            " Set the highlight column color
 filetype indent on                          " Load indent files based on filetype
 
 " Spacing

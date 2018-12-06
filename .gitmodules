@@ -37,3 +37,9 @@
 [submodule ".config/nvim/bundle/suda.vim"]
 	path = .config/nvim/bundle/suda.vim
 	url = git@github.com:lambdalisue/suda.vim
+[submodule "xresources"]
+	path = xresources
+	url = git@github.com:dracula/xresources
+[submodule ".config/nvim/bundle/dracula-theme"]
+	path = .config/nvim/bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
